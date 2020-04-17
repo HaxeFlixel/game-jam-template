@@ -18,10 +18,8 @@ jobs:
     - name: Build
       run: haxelib run lime build html5 -final
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@3.4.3
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        BRANCH: gh-pages
-        FOLDER: export/html5/bin
-        SINGLE_COMMIT: true
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        publish_dir: ./export/html5/bin
       if: github.ref == 'refs/heads/master'

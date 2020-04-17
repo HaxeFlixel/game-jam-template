@@ -2,7 +2,7 @@
 
 [![CI](https://img.shields.io/github/workflow/status/HaxeFlixel/game-jam-template/CI.svg?logo=github)](https://github.com/HaxeFlixel/game-jam-template/actions?query=workflow%3ACI)
 
-This is a HaxeFlixel template that is helpful for game jams. It consists of:
+This is a HaxeFlixel template that is particularly helpful for game jams. It consists of:
 
 - An empty HaxeFlixel project generated with the `flixel template` command (with config files for Visual Studio Code).
 - Automated HTML5 builds after each commit using GitHub Actions with deployment to GitHub Pages, so the playable game shows up on `http://<user-name>.github.io/<repo-name>/`. In this case the URL is http://haxeflixel.github.io/game-jam-template/. Very handy if you want feedback from others mid-jam!

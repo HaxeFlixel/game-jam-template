@@ -1,0 +1,27 @@
+name: CI
+
+on: [push, pull_request, repository_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - uses: lix-pm/setup-lix@master
+    - uses: HaxeFlixel/setup-flixel@master
+      with:
+        haxe-version: stable
+        flixel-versions: release
+        target: html5
+    - name: Build
+      run: haxelib run lime build html5 -final
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@3.4.3
+      with:
+        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        BRANCH: gh-pages
+        FOLDER: export/html5/bin
+        SINGLE_COMMIT: true
+      if: github.ref == 'refs/heads/master'

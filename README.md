@@ -4,8 +4,8 @@
 
 This is a HaxeFlixel template that is helpful for game jams. It consists of:
 
-- an empty HaxeFlixel project generated with the `flixel template` command (with config files for Visual Studio Code)
-- automated HTML5 builds on GitHub Actions with deployment GitHub Pages, so the playable game shows up on `http://<user-name>.github.io/<repo-name>/`, e.g. http://haxeflixel.github.io/game-jam-template/ in this case
+- An empty HaxeFlixel project generated with the `flixel template` command (with config files for Visual Studio Code).
+- Automated HTML5 builds after each commit using GitHub Actions with deployment to GitHub Pages, so the playable game shows up on `http://<user-name>.github.io/<repo-name>/`. In this case the URL is http://haxeflixel.github.io/game-jam-template/. Very handy if you want feedback from others mid-jam!
 
 This is a [template repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template), simply click "Use this template" to create a copy of it on your own GitHub account!
 
